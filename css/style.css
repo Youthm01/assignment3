@@ -1,0 +1,155 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Flexbox for index.html */
+#index-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Grid for projects.html */
+#projects-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid Areas for blog.html */
+#blog-page {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'main main sidebar'
+        'footer footer footer';
+    grid-gap: 20px;
+}
+
+header, main, footer, aside {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Image Styling */
+img {
+    border: 5px solid #333;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* List Styling */
+ul, ol {
+    margin: 20px;
+    padding-left: 40px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #050000;
+    padding: 8px;
+}
+
+/* Multiple Selector */
+nav a, footer {
+    font-family: Arial, sans-serif;
+}
+
+/* Child Selector */
+ul > li {
+    color: #333;
+}
+
+/* Sibling Selector */
+h2 + p {
+    color: #666;
+}
+
+/* Adjacent Sibling Selector */
+h2 + ul {
+    background-color: #f9f9f9;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    background-color: rgb(255, 21, 0);
+}
+
+/* Pseudo-element Selector */
+p::first-letter {
+    font-size: 150%;
+}
+
+/* Define the first table style */
+.table-color1 {
+    background-color: lightblue;
+    color: white; /* Text color */
+    border: 2px solid darkblue; /* Border style */
+}
+
+/* Define the second table style */
+.table-color2 {
+    background-color: lightgreen;
+    color: black; /* Text color */
+    border: 2px solid darkgreen; /* Border style */
+}
+
+/* Additional styles for table cells */
+.table-color1 td,
+.table-color2 td {
+    padding: 10px; /* Cell padding */
+    border: 1px solid black; /* Cell border */
+}
+
+/* Additional styles for table headers */
+.table-color1 th,
+.table-color2 th {
+    padding: 10px; /* Header cell padding */
+    border: 2px solid black; /* Header cell border */
+}
+
